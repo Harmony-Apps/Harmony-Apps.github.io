@@ -1,71 +1,105 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Harmony Apps</title>
-	  <style>
-    .jumbotron {
-        background-image: url('images/BackgroundAsset.png'); /* Path to your image */
-        background-size: 20% auto; /* Cover the entire container */
-        background-position: right; /* Center the background image */
-        background-repeat: no-repeat; /* Do not repeat the background image */
-    }
-	.custom-jumbotron {
-        height: 600px; /* Set the height to your desired value */
-        background-color: #f8f9fa; /* Optional: Add background color */
-    }
-	  </style>
-    <!-- Bootstrap -->
-    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <img src="images/HarmonyLogo.png" width="60" height="58" alt="" style="margin-right: 20px;"/><a class="navbar-brand" href="https://harmonyapps.co.uk">Harmony Apps</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="position: absolute; right: 20px;">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active"> <a class="nav-link" href="https://harmonyapps.co.uk">Home <span class="sr-only">(current)</span></a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#">About</a> </li>
-			<li class="nav-item"> <a class="nav-link" href="#">Contact</a> </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> More</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Articles</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Portfolio</a> 
-            </div>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <header>
-      <div class="jumbotron custom-jumbotron" style="align-content: center">
-        <div class="container">
-          <div class="row" align="center">
-            <div class="col-12 col-xl-12">
-              <h1 class="text-center">Custom iOS Applications</h1>
-              <p class="text-center">Bring your brand to life with a custom application for iPhone, iPad, Apple Watch, AppleTV,&nbsp; Mac &amp; VisionPro.</p>
-              <p class="text-center"><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-  <footer class="text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <p>Copyright © 2024 Harmony Apps. All rights reserved.</p>
-          </div>
-        </div>
-      </div>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Harmony Apps - Home</title>
+	<style>
+		html {
+			background-color: white;
+		}
+		@font-face {
+            font-family: 'EudoxusSans';
+            src: url('fonts/EudoxusSans-Regular.ttf') format('truetype');
+        }
+		body {
+			height: 100%;
+			margin: 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			background-color: white;
+		}
+		p {
+			font-family: 'EudoxusSans', sans-serif;
+		}
+		.harmonylogo-container {
+			text-align: center;
+			display: flex;
+			align-items: center;
+			padding-top: 80px;
+			padding-bottom: 40px;
+		}
+		.harmonylogo-container img {
+			display: block;
+			max-width: auto;
+			height: auto;
+			margin: 0 auto;
+		}
+		.harmonylogo-container p {
+			color: black;
+			font-family: 'EudoxusSans', sans-serif;
+        	font-size: 72px;
+			font-weight: bolder;
+        	margin: 0 auto;
+    	}
+		.mainslogan-container {
+			text-align: left;
+		}
+		.mainslogan-container p {
+			color: black;
+			font-family: 'EudoxusSans', sans-serif;
+        	font-size: 48px;
+			font-weight: bolder;
+        	margin: 0 auto;
+		}
+		.coloredtext-container {
+			text-align: left;
+		}
+		.coloredtext-container p {
+			background-image: linear-gradient(to right, #935CFF, #5CC1FF);
+            -webkit-background-clip: text;
+            color: transparent;
+			font-family: 'EudoxusSans', sans-serif;
+        	font-size: 48px;
+			font-weight: bolder;
+        	margin: 0 auto;
+		}
+		.smallprint-container {
+			text-align: left;
+		}
+		.smallprint-container p {
+			color: black;
+			font-family: 'EudoxusSans', sans-serif;
+        	font-size: medium;
+			font-weight: bolder;
+        	margin: 0 auto;
+		}
+		.copyright {
+            text-align: center;
+            color: gray;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+	</style>
+</head>
+
+<body>
+	<div class="harmonylogo-container">
+		<img src="images/HarmonyLogo.png" width="225" height="200" alt=""/>
+		<p>HarmonyApps</p>
+	</div>
+	<div class="mainslogan-container">
+		<p>Your Vision, Our Code:</p>
+	  <div class="coloredtext-container">
+		<p>Turning Ideas into Business</p>
+		</div>
+		<div class="smallprint-container">
+			<p>Custom applications for iPhone, iPad, Mac, AppleTV, Apple Watch & VisionPro</p>
+		</div>
+	</div>
+	<footer class="copyright">
+        &copy; 2024 Harmony Apps. All rights reserved.
     </footer>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-    <script src="js/jquery-3.4.1.min.js"></script> 
-    <!-- Include all compiled plugins (below), or include individual files as needed --> 
-    <script src="js/popper.min.js"></script> 
-    <script src="js/bootstrap-4.4.1.js"></script>
-  </body>
+</body>
 </html>
